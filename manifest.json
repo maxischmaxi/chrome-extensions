@@ -1,0 +1,40 @@
+{
+    "name": "Tab Mover",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Moves Tabs with Shortcuts",
+    "permissions": ["tabs"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "commands": {
+        "move_tab_left": {
+            "suggested_key": {
+                "default": "Alt+Shift+Left",
+                "mac": "Alt+Shift+Left"
+            },
+            "description": "Move tab left"
+        },
+        "move_tab_right": {
+            "suggested_key": {
+                "default": "Alt+Shift+Right",
+                "mac": "Alt+Shift+Right"
+            },
+            "description": "Move tab right"
+        },
+        "focus_tab_left": {
+            "suggested_key": {
+                "default": "Alt+Left",
+                "mac": "Alt+Left"
+            },
+            "description": "Focus tab left"
+        },
+        "focus_tab_right": {
+            "suggested_key": {
+                "default": "Alt+Right",
+                "mac": "Alt+Right"
+            },
+            "description": "Focus tab right"
+        }
+    }
+}
