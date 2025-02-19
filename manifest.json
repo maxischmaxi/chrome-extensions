@@ -10,29 +10,29 @@
     "commands": {
         "move_tab_left": {
             "suggested_key": {
-                "default": "Alt+Shift+Left",
-                "mac": "Alt+Shift+Left"
+                "default": "Ctrl+Shift+Left",
+                "mac": "MacCtrl+Command+H"
             },
             "description": "Move tab left"
         },
         "move_tab_right": {
             "suggested_key": {
-                "default": "Alt+Shift+Right",
-                "mac": "Alt+Shift+Right"
+                "default": "Ctrl+Shift+Right",
+                "mac": "MacCtrl+Command+L"
             },
             "description": "Move tab right"
         },
         "focus_tab_left": {
             "suggested_key": {
-                "default": "Alt+Left",
-                "mac": "Alt+Left"
+                "default": "Ctrl+Left",
+                "mac": "MacCtrl+H"
             },
             "description": "Focus tab left"
         },
         "focus_tab_right": {
             "suggested_key": {
-                "default": "Alt+Right",
-                "mac": "Alt+Right"
+                "default": "Ctrl+Right",
+                "mac": "MacCtrl+L"
             },
             "description": "Focus tab right"
         }
