@@ -1,0 +1,25 @@
+body.tab-width-8 {
+    tab-size: 4 !important;
+}
+
+pre code,
+pre *,
+pre span,
+.tab-width-8,
+pre {
+    tab-size: 4 !important;
+}
+
+#board-layout-ad,
+.board-layout-ad,
+.medium-rectangle-btf-ad-wrapper,
+#medium-rectangle-btf-ad,
+#leaderboard-atf-ad,
+.leaderboard-atf-ad-wrapper,
+.medium-rectangle-atf-ad-wrapper,
+#medium-rectangle-ad-component,
+.ad-upgrade-link-component,
+.medium-rectangle-ad-slot {
+    display: none;
+    visibility: hidden;
+}
