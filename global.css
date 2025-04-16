@@ -21,6 +21,7 @@ pre {
 .medium-rectangle-atf-ad-wrapper,
 #medium-rectangle-ad-component,
 .ad-upgrade-link-component,
+.game-over-ad-container-component,
 .medium-rectangle-ad-slot {
     display: none;
     visibility: hidden;
