@@ -1,0 +1,73 @@
+/* source/patterns/10-atoms/InputCheckbox/InputCheckbox.css */
+.InputCheckbox {
+  position: relative;
+}
+.InputCheckbox .InputCheckbox-label {
+  color: var(--color-input-checkbox-label);
+  display: block;
+  padding-left: 2.8125rem;
+}
+.InputCheckbox .InputCheckbox-label:before {
+  background-color: hsla(0, 0%, 100%, .35);
+  border: .0625rem solid var(--color-input-checkbox-box-border);
+  content: "";
+  height: 1.5625rem;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1.5625rem;
+}
+.InputCheckbox .InputCheckbox-label:after {
+  font-family: icons, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-input-checkbox-icon);
+  content: var(--icon-checkmark);
+  display: none;
+  font-size: 1.0625rem;
+  left: .25rem;
+  position: absolute;
+  top: .25rem;
+}
+.InputCheckbox .InputCheckbox-input {
+  height: .0625rem;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: .0625rem;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}
+.InputCheckbox .InputCheckbox-input:checked ~ .InputCheckbox-label:after {
+  display: block;
+}
+.InputCheckbox.is-disabled .InputCheckbox-label {
+  color: var(--color-input-checkbox-disabled-label);
+}
+.InputCheckbox.is-disabled .InputCheckbox-label:before {
+  border-color: var(--color-input-checkbox-disabled-box-border);
+}
+.InputCheckbox.is-invalid .InputCheckbox-label {
+  color: var(--color-input-checkbox-invalid-label);
+}
+.InputCheckbox.is-invalid .InputCheckbox-label:before {
+  border-color: var(--color-input-checkbox-invalid-box-border);
+}
+.InputCheckbox.is-invalid .InputCheckbox-label:after {
+  color: var(--color-input-checkbox-invalid-icon);
+}
+.InputCheckbox:focus-within .InputCheckbox-label:before {
+  outline: .0625rem solid var(--color-input-checkbox-box-border);
+  outline-offset: 2px;
+}
+.InputCheckbox--small .InputCheckbox-label {
+  padding-top: .1875rem;
+}
+/*# sourceMappingURL=InputCheckbox.bundle.css.map */

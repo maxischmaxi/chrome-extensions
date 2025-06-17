@@ -1,0 +1,81 @@
+/* source/patterns/10-atoms/InputSingleline/InputSingleline.css */
+.InputSingleline {
+  position: relative;
+}
+.InputSingleline .InputSingleline-label {
+  background-color: #fff;
+  color: var(--color-input-singleline-placeholder);
+  cursor: text;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  left: 15px;
+  line-height: 1.625rem;
+  padding: 0 .3125rem;
+  position: absolute;
+  top: 7px;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+  will-change: transform, font-size;
+}
+@media (min-width:960px) {
+  .InputSingleline .InputSingleline-label {
+    top: .75rem;
+  }
+}
+.InputSingleline .InputSingleline-label.is-active {
+  font-size: .875rem;
+  -webkit-transform: translateY(-1.375rem);
+  transform: translateY(-1.375rem);
+}
+.InputSingleline .InputSingleline-label.is-invalid {
+  color: var(--color-input-singleline-error-text);
+}
+.InputSingleline .InputSingleline-input {
+  background-color: var(--color-input-singleline-background);
+  border: .0625rem solid var(--color-input-singleline-border);
+  color: var(--color-input-singleline-text);
+  display: block;
+  font-family: BrandonText, sans-serif;
+  font-size: 1rem;
+  min-height: 2.5rem;
+  padding: .5rem 1.25rem;
+  width: 100%;
+}
+@media (min-width:960px) {
+  .InputSingleline .InputSingleline-input {
+    font-size: 1.125rem;
+    min-height: 3.125rem;
+    padding: .5625rem 1.25rem;
+  }
+}
+.InputSingleline .InputSingleline-input:active,
+.InputSingleline .InputSingleline-input:focus {
+  border-color: var(--color-input-singleline-focused-border);
+  outline: none;
+}
+.InputSingleline .InputSingleline-error {
+  color: var(--color-input-singleline-error-text);
+  font-family: BrandonText, sans-serif;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  margin-top: .1875rem;
+}
+.InputSingleline.is-disabled .InputSingleline-input {
+  border-color: var(--color-input-singleline-disabled-border);
+}
+.InputSingleline.is-disabled .InputSingleline-input:active,
+.InputSingleline.is-disabled .InputSingleline-input:focus {
+  border-color: var( --color-input-singleline-disabled-focused-border );
+}
+.InputSingleline.is-invalid .InputSingleline-input {
+  border-color: var(--color-input-singleline-invalid-border);
+}
+.InputSingleline.is-invalid .InputSingleline-input .InputSingleline-label {
+  color: var(--color-input-singleline-invalid-placeholder);
+}
+.InputSingleline.is-invalid .InputSingleline-input:active,
+.InputSingleline.is-invalid .InputSingleline-input:focus {
+  border-color: var( --color-input-singleline-invalid-focused-border );
+}
+/*# sourceMappingURL=InputSingleline.bundle.css.map */
