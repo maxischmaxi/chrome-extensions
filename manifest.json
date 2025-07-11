@@ -1,46 +1,46 @@
 {
-    "name": "Tab Mover",
-    "version": "1.0",
-    "manifest_version": 3,
-    "description": "Moves Tabs with Shortcuts",
-    "permissions": ["tabs"],
-    "background": {
-        "service_worker": "background.js"
-    },
-    "content_scripts": [
-        {
-            "matches": ["*://*/*"],
-            "css": ["global.css"]
-        }
-    ],
-    "commands": {
-        "move_tab_left": {
-            "suggested_key": {
-                "default": "Ctrl+Shift+Left",
-                "mac": "MacCtrl+Command+P"
-            },
-            "description": "Move tab left"
-        },
-        "move_tab_right": {
-            "suggested_key": {
-                "default": "Ctrl+Shift+Right",
-                "mac": "MacCtrl+Command+N"
-            },
-            "description": "Move tab right"
-        },
-        "focus_tab_left": {
-            "suggested_key": {
-                "default": "Ctrl+Left",
-                "mac": "MacCtrl+P"
-            },
-            "description": "Focus tab left"
-        },
-        "focus_tab_right": {
-            "suggested_key": {
-                "default": "Ctrl+Right",
-                "mac": "MacCtrl+N"
-            },
-            "description": "Focus tab right"
-        }
+  "name": "Tab Mover",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Moves Tabs with Shortcuts",
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": ["global.css"]
     }
+  ],
+  "commands": {
+    "move_tab_left": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Left",
+        "mac": "MacCtrl+Command+P"
+      },
+      "description": "Move tab left"
+    },
+    "move_tab_right": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Right",
+        "mac": "MacCtrl+Command+N"
+      },
+      "description": "Move tab right"
+    },
+    "focus_tab_left": {
+      "suggested_key": {
+        "default": "Ctrl+Left",
+        "mac": "MacCtrl+P"
+      },
+      "description": "Focus tab left"
+    },
+    "focus_tab_right": {
+      "suggested_key": {
+        "default": "Ctrl+Right",
+        "mac": "MacCtrl+N"
+      },
+      "description": "Focus tab right"
+    }
+  }
 }
